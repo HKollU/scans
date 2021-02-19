@@ -10,7 +10,7 @@ echo "4. Nessus Scan"
 echo "5. Burp Suite Scan"
 echo "Type exit or CTRL+C to exit program"
 printf "#> "
-read $RESPONSE
+read RESPONSE
 echo " "
 case $RESPONSE in
 
