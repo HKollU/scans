@@ -27,7 +27,7 @@ case $RESPONSE in
 "exit")
   exit 0;;
 "*")
-  echo "Please enter an option in range [1-5].";;
+  echo " ";;
 esac
-echo " "
+clear
 done
