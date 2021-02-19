@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 while true
 do
 echo "Welcome to the Penetration Test Scanning Suite Menu!"
