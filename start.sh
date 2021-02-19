@@ -8,21 +8,26 @@ echo "2. Nikto Scans"
 echo "3. Uniscan Scan"
 echo "4. Nessus Scan"
 echo "5. Burp Suite Scan"
+echo "Type exit or CTRL+C to exit program"
+printf "#> "
 read $RESPONSE
-
+echo " "
 case $RESPONSE in
 
-1)
+"1")
   ./nmapscans;;
-2)
+"2")
   ./niktoscans;;
-3)
+"3")
   ./uniscans;;
-4)
+"4")
   ./nessusscans;;
-5)
+"5")
   ./burpscans;;
-*)
+"exit")
+  exit 0;;
+"*")
   echo "Please enter an option in range [1-5].";;
 esac
+echo " "
 done
