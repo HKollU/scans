@@ -16,7 +16,8 @@ echo " "
 case $RESPONSE in
 
 "1")
-  ./nmapscans.sh;;
+  ./nmapscans.sh
+   clear;;
 "2")
   ./niktoscans.sh;;
 "3")
@@ -28,7 +29,7 @@ case $RESPONSE in
 "exit")
   exit 0;;
 "*")
-  echo " ";;
+  clear;;
 esac
-clear
+echo " "
 done
