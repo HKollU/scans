@@ -12,7 +12,7 @@ echo "6. Aggressive Scan"
 echo "Enter 'r' to return to main menu."
 printf "#> "
 read NMAPOPTION
-case $NMAPOPTION
+case $NMAPOPTION in
 
 "1")
 echo "Running basic scan, this may take a while..."
