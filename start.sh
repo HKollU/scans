@@ -16,15 +16,15 @@ echo " "
 case $RESPONSE in
 
 "1")
-  ./nmapscans;;
+  ./nmapscans.sh;;
 "2")
-  ./niktoscans;;
+  ./niktoscans.sh;;
 "3")
-  ./uniscans;;
+  ./uniscans.sh;;
 "4")
-  ./nessusscans;;
+  ./nessusscans.sh;;
 "5")
-  ./burpscans;;
+  ./burpscans.sh;;
 "exit")
   exit 0;;
 "*")
