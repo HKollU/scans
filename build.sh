@@ -8,4 +8,5 @@ wget -o "burpsuite_community_v2021.2.1.jar" "https://portswigger.net/burp/releas
 rm burpsuite_community_v2021.2.1.jar
 mv 'download?product=community&version=2021.2.1&type=Jar' burpsuite_community_v2021.2.1.jar
 echo "Done building!!!"
+echo "To start program run:sudo ./start.sh"
 exit 0
