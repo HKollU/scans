@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Running UniScan, this may take a while..."&&docker container run -it dockscan uniscan -u https://cora-vuetify-dev.herokuapp.com/login/ -qd >Uni_Scan.txt &&echo "------------------------------" && cat Uni_Scan.txt&& echo "------------------------------"
+echo "Running UniScan, this may take a while..."&&uniscan -u https://cora-vuetify-dev.herokuapp.com/login/ -qd >Uni_Scan.txt &&echo "------------------------------" && cat Uni_Scan.txt&& echo "------------------------------"
 while true
 do
 echo "done reviewing results?"
