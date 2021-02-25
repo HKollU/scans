@@ -17,22 +17,22 @@ case $NMAPOPTION in
 
 "1")
 echo "Running basic scan, this may take a while..."
-docker container run -it dockscan nmap -v cora-vuetify-dev.herokuapp.com>BasicScan.txt &&echo "------------------------------"&& cat BasicScan.txt&&echo "------------------------------";;
+nmap -v cora-vuetify-dev.herokuapp.com>BasicScan.txt &&echo "------------------------------"&& cat BasicScan.txt&&echo "------------------------------";;
 "2")
 echo "Running TCP SYN scan, this may take a while..."
-docker container run -it dockscan nmap -v -sS cora-vuetify-dev.herokuapp.com>TCPSYNScan.txt &&echo "------------------------------"&& cat TCPSYNScan.txt&&echo "------------------------------";;
+nmap -v -sS cora-vuetify-dev.herokuapp.com>TCPSYNScan.txt &&echo "------------------------------"&& cat TCPSYNScan.txt&&echo "------------------------------";;
 "3")
 echo "Running TCP ACK scan, this may take a while..."
-docker container run -it dockscan nmap -v -sA cora-vuetify-dev.herokuapp.com>TCPACKScan.txt &&echo "------------------------------"&& cat TCPACKScan.txt&&echo "------------------------------";;
+nmap -v -sA cora-vuetify-dev.herokuapp.com>TCPACKScan.txt &&echo "------------------------------"&& cat TCPACKScan.txt&&echo "------------------------------";;
 "4")
 echo "Running Service Version scan, this may take a while..."
-docker container run -it dockscan nmap -v -sV -version-intensity 5 cora-vuetify-dev.herokuapp.com>ServiceScan.txt &&echo "------------------------------"&& cat ServiceScan.txt&&echo "------------------------------";;
+dockscan nmap -v -sV -version-intensity 5 cora-vuetify-dev.herokuapp.com>ServiceScan.txt &&echo "------------------------------"&& cat ServiceScan.txt&&echo "------------------------------";;
 "5")
 echo "Running default NSE script scan, this may take a while..."
-docker container run -it dockscan nmap -v -sC cora-vuetify-dev.herokuapp.com>ScriptScan.txt &&echo "------------------------------"&& cat ScriptScan.txt&&echo "------------------------------";;
+nmap -v -sC cora-vuetify-dev.herokuapp.com>ScriptScan.txt &&echo "------------------------------"&& cat ScriptScan.txt&&echo "------------------------------";;
 "6")
 echo "Running Aggressive scan, this may take a while..."
-docker container run -it dockscan nmap -v -A cora-vuetify-dev.herokuapp.com>AggressiveScan.txt && echo "------------------------------"&&cat AggressiveScan.txt&&echo "------------------------------";;
+nmap -v -A cora-vuetify-dev.herokuapp.com>AggressiveScan.txt && echo "------------------------------"&&cat AggressiveScan.txt&&echo "------------------------------";;
 "r")
 clear
 exit 0;;
